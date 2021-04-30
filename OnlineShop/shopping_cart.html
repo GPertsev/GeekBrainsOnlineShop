@@ -755,7 +755,7 @@
     </header>
 
     <main class="shopping-cart-page">
-        <div class="product-nav">
+        <nav class="product-nav">
             <div class="container product-nav-wrapper">
                 <h3 class="product-nav-current">New arrivals</h3>
                 <ul class="breadcrumbs">
@@ -764,7 +764,109 @@
                     <li class="breadcrumbs-item current-breadcrumbs">New arrivals</li>
                 </ul>
             </div>
-        </div>
+
+        </nav>
+        <form action="#" class="user-total user-total_margin-t user-total_margin-b">
+
+            <h5 class="user-total__title user-total__title_grid-start">Product Details</h5>
+            <h5 class="user-total__title">Unite Price</h5>
+            <h5 class="user-total__title">Quantity</h5>
+            <h5 class="user-total__title">Shipping</h5>
+            <h5 class="user-total__title">Subtotal</h5>
+            <h5 class="user-total__title user-total__title_grid-end">Action</h5>
+
+            <div class="user-product user-product_border-top">
+                <a href="single_page.html" class="user-product__link user-product__link_grid-start"><img
+                        src="img/shipping_cart/cart_product1.jpg" alt="Mango people T-shirt"
+                        class="user-product__img"></a>
+                <div class="user-product__info-wrapper user-product__info-wrapper_grid-start">
+                    <h7 class="user-product__info-title user-product__info-title_padding-b">Mango People T-shirt</h7>
+                    <p class="user-product__property"><span
+                            class="user-product__property-name user-product__property-name_margin-r">Color:</span>Red
+                    </p>
+                    <p class="user-product__property"><span
+                            class="user-product__property-name user-product__property-name_margin-r">Size:</span>XLL</p>
+                </div>
+                <p class="user-product__price">$150</p>
+                <input type="number" class="user-product__quantity-input">
+                <p class="user-product__shipping-info">Free</p>
+                <p class="user-product__total-price">$300</p>
+                <button class="shopping-cart-delete-button user-product__delete-button"><i
+                        class="icon-cancel"></i><button></button>
+            </div>
+
+            <div class="user-product user-product_border-top">
+                <a href="single_page.html" class="user-product__link user-product__link_grid-start"><img
+                        src="img/shipping_cart/cart_product2.jpg" alt="Mango people T-shirt"
+                        class="user-product__img"></a>
+                <div class="user-product__info-wrapper user-product__info-wrapper_grid-start">
+                    <h7 class="user-product__info-title user-product__info-title_padding-b">Mango People T-shirt</h7>
+                    <p class="user-product__property"><span
+                            class="user-product__property-name user-product__property-name_margin-r">Color:</span>Red
+                    </p>
+                    <p class="user-product__property"><span
+                            class="user-product__property-name user-product__property-name_margin-r">Size:</span>XLL</p>
+                </div>
+                <p class="user-product__price">$150</p>
+                <input type="number" class="user-product__quantity-input">
+                <p class="user-product__shipping-info">Free</p>
+                <p class="user-product__total-price">$300</p>
+                <button class="shopping-cart-delete-button user-product__delete-button"><i
+                        class="icon-cancel"></i><button></button>
+            </div>
+
+            <div class="user-product user-product_border-top user-product_border-bottom user-product_margin-b">
+                <a href="single_page.html" class="user-product__link user-product__link_grid-start"><img
+                        src="img/shipping_cart/cart_product3.jpg" alt="Mango people T-shirt"
+                        class="user-product__img"></a>
+                <div class="user-product__info-wrapper user-product__info-wrapper_grid-start">
+                    <h7 class="user-product__info-title user-product__info-title_padding-b">Mango People T-shirt</h7>
+                    <p class="user-product__property"><span
+                            class="user-product__property-name user-product__property-name_margin-r">Color:</span>Red
+                    </p>
+                    <p class="user-product__property"><span
+                            class="user-product__property-name user-product__property-name_margin-r">Size:</span>XLL</p>
+                </div>
+                <p class="user-product__price">$150</p>
+                <input type="number" class="user-product__quantity-input">
+                <p class="user-product__shipping-info">Free</p>
+                <p class="user-product__total-price">$300</p>
+                <button class="shopping-cart-delete-button user-product__delete-button"><i
+                        class="icon-cancel"></i><button></button>
+            </div>
+
+            <div class="user-total__cart-button-wrapper user-total__cart-button-wrapper_margin-b">
+                <button class="user-total__button" type="button">Clear shopping cart</button>
+                <button class="user-total__button" type="button">Continue shopping</button>
+            </div>
+
+            <div class="user-total__user-data-wrapper">
+                <fieldset class="user-total__fieldset user-total__fieldset_addres">
+                    <legend class="user-total__legend user-total__legend_margin-b">Shipping address</legend>
+                    <input list="address" class="user-total__input user-total__input_address user-total__input_margin-b-small" placeholder="Bangladesh">
+                    <datalist class="user-total__datalist" id="address">
+                        <option value="Bangladesh" class="user-address-option">Bangladesh</option>
+                        <option value="Ne Bangladesh" class="user-address-option">Ne Bangladesh</option>
+                        <option value="Bhutan" class="user-address-option">Bhutan</option>
+                        <option value="Laos" class="user-address-option">Laos</option>
+                    </datalist>
+                    <input type="text" class="user-total__input user-total__input_margin-b-small" placeholder="State">
+                    <input type="text" class="user-total__input user-total__input_margin-b" placeholder="Postcode / Zip">
+                    <button class="user-total__fieldset-button">Get a quote</button>
+                </fieldset>
+                <fieldset class="user-total__fieldset user-total__fieldset_coupon">
+                    <legend class="user-total__legend user-total__legend_margin-b-medium">Coupon discount</legend>
+                    <p class="user-total__fieldset-text user-total__fieldset-text_margin-b">Enter your coupon code if you have one</p>
+                    <input type="text" class="user-total__input user-total__input_margin-b" placeholder="State">
+                    <button class="user-total__fieldset-button user-total__fieldset-button_big">Apply coupon</button>
+                </fieldset>
+                <fieldset class="user-total__fieldset user-total__fieldset_grand-total">
+                    <p class="user-total__sub-text">Sub total <span class="user-total__sub-total"></span>$900</p>
+                    <p class="user-total__grand-total user-total__grand-total_padding-b user-total__grand-total_margin-t user-total__grand-total_border-b user-total__grand-total_margin-b">Grand total <span class="smth-pink">$900</span></p>
+                    <button type="button" class="user-total__proceede-button">Proceed to checkout</button>
+                </fieldset>
+            </div>
+        </form>
     </main>
 
     <footer class="footer">
